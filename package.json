@@ -1,0 +1,26 @@
+{
+  "name": "vscode-theme-e-ink",
+  "displayName": "vscode-theme-e-ink",
+  "description": "A VSCode theme designed specifically for E-Ink displays.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "E-Ink Single",
+        "uiTheme": "hc-light",
+        "path": "./themes/e-ink-single.json"
+      },
+      {
+        "label": "E-Ink Pink",
+        "uiTheme": "hc-light",
+        "path": "./themes/e-ink-pink.json"
+      }
+    ]
+  }
+}
