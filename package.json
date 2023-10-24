@@ -13,12 +13,12 @@
     "themes": [
       {
         "label": "E-Ink Single",
-        "uiTheme": "hc-light",
+        "uiTheme": "vs",
         "path": "./themes/e-ink-single.json"
       },
       {
         "label": "E-Ink Pink",
-        "uiTheme": "hc-light",
+        "uiTheme": "vs",
         "path": "./themes/e-ink-pink.json"
       }
     ]
