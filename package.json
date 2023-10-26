@@ -12,14 +12,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "E-Ink Single",
+        "label": "E-Ink",
         "uiTheme": "vs",
-        "path": "./themes/e-ink-single.json"
-      },
-      {
-        "label": "E-Ink Pink",
-        "uiTheme": "vs",
-        "path": "./themes/e-ink-pink.json"
+        "path": "./themes/e-ink.json"
       }
     ]
   }
