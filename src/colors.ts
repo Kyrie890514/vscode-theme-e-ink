@@ -3,21 +3,24 @@ const colors = {
   white: '#ffffff',
   blue: '#00bfff',
   green: '#50fa7b',
+  lightpink: '#ff79c666',
   pink: '#ff79c6',
   purple: '#bd93f9',
   red: '#ff5555',
-  yellow: '#f1fa8c'
+  orange: '#ffb86c'
 }
 
 export default {
   colors,
   themes: {
     primary: colors.pink,
+    primaryLight: colors.lightpink,
     secondary: colors.purple,
     foreground: colors.black,
     background: colors.white,
     border: colors.pink,
-    error: colors.red
+    error: colors.red,
+    warning: colors.orange
 
     // activeForeground: ['#bfbaaa', '#4e4f47'],
     // secondaryForeground: ['#dedcd590', '#393a3490'],

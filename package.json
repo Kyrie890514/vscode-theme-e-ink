@@ -13,7 +13,7 @@
     "themes": [
       {
         "label": "E-Ink",
-        "uiTheme": "vs",
+        "uiTheme": "hc-light",
         "path": "./themes/e-ink.json"
       }
     ]
