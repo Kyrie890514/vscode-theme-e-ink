@@ -1,5 +1,25 @@
 {
   "name": "E-Ink",
-  "colors": {},
-  "tokenColors": []
+  "base": "vs",
+  "$schema": "vscode://schemas/color-theme",
+  "colors": {
+    "focusBorder": "#ff69b4",
+    "foreground": "#333333",
+    "widget.border": "#ff8ad4",
+    "widget.shadow": "#ffffff",
+    "selection.background": "#ff8ad4",
+    "descriptionForeground": "#4e4f47",
+    "errorForeground": "e0115f",
+    "icon.foreground": "#ff69b4",
+    "sash.hoverBorder": "#ff69b4",
+    "window.activeBorder": "#ff69b4",
+    "window.inactiveBorder": "#ff8ad4",
+    "textBlockQuote.background": "#ffffff",
+    "textBlockQuote.border": "#ff8ad4",
+    "textCodeBlock.background": "#ffffff",
+    "textLink.foreground": "#00bfff",
+    "textLink.activeForeground": "#00bfff",
+    "textPreformat.foreground": "#ff8ad4",
+    "textSeparator.foreground": "#ff8ad4"
+  }
 }

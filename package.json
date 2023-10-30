@@ -17,5 +17,13 @@
         "path": "./themes/e-ink.json"
       }
     ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "esno": "^0.17.0"
+  },
+  "scripts": {
+    "dev": "esno watch src/index.ts",
+    "build": "esno src/index.ts"
   }
 }
