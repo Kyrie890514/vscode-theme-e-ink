@@ -6,7 +6,7 @@ const colors = {
   yellow: ['#ffffb0', '#ffff00'],
   white: ['#ffffff'],
   black: ['#333333', '#4e4f47'],
-  red: ['e0115f']
+  red: ['#e0115f']
 }
 
 export default {
