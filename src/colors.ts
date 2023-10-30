@@ -1,24 +1,23 @@
 const colors = {
-  pink: ['#ff8ad4', '#ff69b4'],
-  purple: ['#ffa1ff', '#ed60ed'],
-  blue: ['#a2e8ff', '#00bfff'],
-  green: ['#63ffa9', '#00ff7f'],
-  yellow: ['#ffffb0', '#ffff00'],
-  white: ['#ffffff'],
-  black: ['#333333', '#4e4f47'],
-  red: ['#e0115f']
+  black: '#282a36',
+  white: '#ffffff',
+  blue: '#00bfff',
+  green: '#50fa7b',
+  pink: '#ff79c6',
+  purple: '#bd93f9',
+  red: '#ff5555',
+  yellow: '#f1fa8c'
 }
 
 export default {
   colors,
-	// todo ...colors
   themes: {
-    foreground: colors.black[0],
-    secondaryForeground: colors.black[1],
-    background: colors.white[0],
-    border: [colors.pink[0], colors.pink[1]],
-    primary: [colors.pink[0], colors.pink[1]],
-    error: colors.red[0]
+    primary: colors.pink,
+    secondary: colors.purple,
+    foreground: colors.black,
+    background: colors.white,
+    border: colors.pink,
+    error: colors.red
 
     // activeForeground: ['#bfbaaa', '#4e4f47'],
     // secondaryForeground: ['#dedcd590', '#393a3490'],

@@ -9,28 +9,28 @@ export default function getTheme() {
     $schema: 'vscode://schemas/color-theme',
     colors: {
       // Base colors
-      focusBorder: themes.border[1],
+      focusBorder: themes.border,
       foreground: themes.foreground,
-      'widget.border': themes.border[0],
-      'widget.shadow': colors.white[0],
-      'selection.background': themes.primary[0],
-      descriptionForeground: themes.secondaryForeground,
+      'widget.border': themes.border,
+      'widget.shadow': themes.background,
+      'selection.background': themes.primary,
+      descriptionForeground: themes.foreground,
       errorForeground: themes.error,
-      'icon.foreground': themes.primary[1],
-      'sash.hoverBorder': themes.primary[1],
+      'icon.foreground': themes.primary,
+      'sash.hoverBorder': themes.primary,
 
       // Window border
-      'window.activeBorder': themes.border[1],
-      'window.inactiveBorder': themes.border[0],
+      'window.activeBorder': themes.border,
+      'window.inactiveBorder': themes.border,
 
       // Text colors
       'textBlockQuote.background': themes.background,
-      'textBlockQuote.border': themes.border[0],
+      'textBlockQuote.border': themes.border,
       'textCodeBlock.background': themes.background,
-      'textLink.foreground': colors.blue[1],
-      'textLink.activeForeground': colors.blue[1],
-      'textPreformat.foreground': themes.primary[0],
-      'textSeparator.foreground': themes.primary[0]
+      'textLink.foreground': themes.secondary,
+      'textLink.activeForeground': colors.blue,
+      'textPreformat.foreground': themes.primary,
+      'textSeparator.foreground': themes.primary
 
       //   'button.background': themes.primary,
       //   'button.foreground': background,
