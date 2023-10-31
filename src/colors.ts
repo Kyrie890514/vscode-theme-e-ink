@@ -14,13 +14,13 @@ export default {
   colors,
   themes: {
     primary: colors.pink,
-    primaryLight: colors.lightpink,
+    primaryBackground: colors.lightpink,
     secondary: colors.purple,
     foreground: colors.black,
     background: colors.white,
     border: colors.pink,
     error: colors.red,
-    warning: colors.orange
+    warn: colors.orange
 
     // activeForeground: ['#bfbaaa', '#4e4f47'],
     // secondaryForeground: ['#dedcd590', '#393a3490'],
