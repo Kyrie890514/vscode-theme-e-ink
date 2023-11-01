@@ -4,5 +4,5 @@ import getTheme from './theme'
 
 fs.writeFile(
   './themes/e-ink.json',
-  `${JSON.stringify(getTheme(), null, 2)}\n`
+  `${JSON.stringify(getTheme())}\n`
 ).catch(() => process.exit(1))
