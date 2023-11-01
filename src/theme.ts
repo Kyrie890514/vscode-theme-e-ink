@@ -359,579 +359,471 @@ export default function getTheme() {
       // 'diffEditor.move.border':themes.secondary,
       // 'diffEditor.moveActive.border':themes.primary,
 
-      // todo
-      // diff 上面的按钮选中颜色
+      // Chat colors
+      // 'chat.requestBorder': themes.primary,
+      // 'chat.slashCommandBackground': themes.primary,
+      // 'chat.slashCommandForeground': themes.primary,
 
-      //   'titleBar.activeForeground': activeForeground,
-      //   'titleBar.activeBackground': background,
-      //   'titleBar.inactiveForeground': primer.gray[5],
-      //   'titleBar.inactiveBackground': background,
-      //   'titleBar.border': activeBackground,
-      //   'notificationCenterHeader.foreground': primer.gray[5],
-      //   'notificationCenterHeader.background': background,
-      //   'notifications.foreground': foreground,
-      //   'notifications.background': background,
-      //   'notifications.border': border,
-      //   'notificationsErrorIcon.foreground': vitesse('red'),
-      //   'notificationsWarningIcon.foreground': vitesse('orange'),
-      //   'notificationsInfoIcon.foreground': vitesse('blue'),
-      //   'pickerGroup.border': border,
-      //   'pickerGroup.foreground': foreground,
-      //   'quickInput.background': background,
-      //   'quickInput.foreground': foreground,
-      //   'quickInputList.focusBackground': activeBackground,
-      //   'statusBar.foreground': activeForeground,
-      //   'statusBar.background': background,
-      //   'statusBar.border': border,
-      //   'statusBar.noFolderBackground': background,
-      //   'statusBar.debuggingBackground': activeBackground,
-      //   'statusBar.debuggingForeground': activeForeground,
-      //   'statusBarItem.prominentBackground': activeBackground,
-      //   'breadcrumb.foreground': primer.gray[5],
-      //   'breadcrumb.focusForeground': foreground,
-      //   'breadcrumb.background': activeBackground,
-      //   'breadcrumb.activeSelectionForeground': selectionBackgroundActive,
-      //   'breadcrumbPicker.background': background,
-      //   'editorOverviewRuler.border': primer.white,
-      //   'panel.background': background,
-      //   'panel.border': border,
-      //   'panelTitle.activeBorder': themes.primary,
-      //   'panelTitle.activeForeground': foreground,
-      //   'panelTitle.inactiveForeground': primer.gray[5],
-      //   'panelInput.border': pick({
-      //     light: primer.gray[2],
-      //     dark: primer.gray[1]
-      //   }),
-      //   'terminal.foreground': foreground,
-      //   'terminal.selectionBackground': selectionBackground,
-      //   'terminal.ansiBrightBlack': pick({ light: '#aaaaaa', dark: '#777777' }),
-      //   'terminal.ansiBrightBlue': vitesse('blue'),
-      //   'terminal.ansiBrightCyan': vitesse('cyan'),
-      //   'terminal.ansiBrightGreen': vitesse('green'),
-      //   'terminal.ansiBrightMagenta': vitesse('magenta'),
-      //   'terminal.ansiBrightRed': vitesse('red'),
-      //   'terminal.ansiBrightWhite': pick({ light: '#dddddd', dark: '#ffffff' }),
-      //   'terminal.ansiBrightYellow': vitesse('yellow'),
-      //   'terminal.ansiBlack': pick({
-      //     light: VitesseThemes.background[0],
-      //     dark: VitesseThemes.foreground[1]
-      //   }),
-      //   'terminal.ansiBlue': vitesse('blue'),
-      //   'terminal.ansiCyan': vitesse('cyan'),
-      //   'terminal.ansiGreen': vitesse('green'),
-      //   'terminal.ansiMagenta': vitesse('magenta'),
-      //   'terminal.ansiRed': vitesse('red'),
-      //   'terminal.ansiWhite': pick({
-      //     light: VitesseThemes.foreground[0],
-      //     dark: VitesseThemes.foreground[0]
-      //   }),
-      //   'terminal.ansiYellow': vitesse('yellow'),
-      //   'gitDecoration.addedResourceForeground': vitesse('green'),
-      //   'gitDecoration.modifiedResourceForeground': vitesse('blue'),
-      //   'gitDecoration.deletedResourceForeground': vitesse('red'),
-      //   'gitDecoration.untrackedResourceForeground': vitesse('cyan'),
-      //   'gitDecoration.ignoredResourceForeground': vitesse('ignored'),
-      //   'gitDecoration.conflictingResourceForeground': vitesse('orange'),
-      //   'gitDecoration.submoduleResourceForeground': vitesse(
-      //     'secondaryForeground'
-      //   ),
-      //   'editorGutter.modifiedBackground': vitesse('blue'),
-      //   'editorGutter.addedBackground': vitesse('green'),
-      //   'editorGutter.deletedBackground': vitesse('red'),
-      //   'editorBracketHighlight.foreground1': vitesse('cyan'),
-      //   'editorBracketHighlight.foreground2': vitesse('green'),
-      //   'editorBracketHighlight.foreground3': vitesse('orange'),
-      //   'editorBracketHighlight.foreground4': vitesse('magenta'),
-      //   'editorBracketHighlight.foreground5': vitesse('yellow'),
-      //   'editorBracketHighlight.foreground6': vitesse('blue'),
-      //   'debugToolBar.background': background,
-      //   'editor.stackFrameHighlightBackground': pick({
-      //     light: primer.yellow[1],
-      //     dark: '#a707'
-      //   }),
-      //   'editor.focusedStackFrameHighlightBackground': pick({
-      //     light: primer.yellow[2],
-      //     dark: '#b808'
-      //   }),
-      //   'peekViewEditor.matchHighlightBackground': pick({ dark: '#ffd33d33' }),
-      //   'peekViewResult.matchHighlightBackground': pick({ dark: '#ffd33d33' }),
-      //   'peekViewEditor.background': background,
-      //   'peekViewResult.background': background,
-      //   'settings.headerForeground': foreground,
-      //   'settings.modifiedItemIndicator': themes.primary,
-      //   'welcomePage.buttonBackground': primer.gray[1],
-      //   'welcomePage.buttonHoverBackground': primer.gray[2],
-      //   'problemsErrorIcon.foreground': vitesse('red'),
-      //   'problemsWarningIcon.foreground': vitesse('orange'),
-      //   'problemsInfoIcon.foreground': vitesse('blue'),
-      //   'editorError.foreground': vitesse('red'),
-      //   'editorWarning.foreground': vitesse('orange'),
-      //   'editorInfo.foreground': vitesse('blue'),
-      //   'editorHint.foreground': vitesse('green'),
-      //   'editorGutter.commentRangeForeground': vitesse('ignored'),
-      //   'editorGutter.foldingControlForeground': vitesse('secondaryForeground'),
-      //   'editorInlayHint.foreground': punctuation,
-      //   'editorInlayHint.background': '#00000000',
-      //   'editorStickyScroll.background': activeBackground,
-      //   'editorStickyScrollHover.background': activeBackground,
-      //   'menu.separatorBackground': border
+      // Inline Chat colors
+      // 'inlineChat.background':themes.primary,
+      // 'inlineChat.border':themes.primary,
+      // 'inlineChat.shadow':themes.primary,
+      // 'inlineChat.regionHighlight':themes.primary,
+      // 'inlineChatInput.border':themes.primary,
+      // 'inlineChatInput.focusBorder':themes.primary,
+      // 'inlineChatInput.placeholderForeground':themes.primary,
+      // 'inlineChatInput.background':themes.primary,
+      // 'inlineChatDiff.inserted':themes.primary,
+      // 'inlineChatDiff.removed':themes.primary,
+
+      // Editor widget colors
+      // 'editorWidget.foreground': themes.foreground,
+      // 'editorWidget.background': themes.background,
+      // 'editorWidget.border': themes.border,
+      // 'editorWidget.resizeBorder': themes.border,
+      // 'editorSuggestWidget.background': themes.primary,
+      // 'editorSuggestWidget.border': themes.primary,
+      // 'editorSuggestWidget.foreground': themes.primary,
+      // 'editorSuggestWidget.focusHighlightForeground': themes.primary,
+      // 'editorSuggestWidget.highlightForeground': themes.primary,
+      // 'editorSuggestWidget.selectedBackground': themes.primary,
+      // 'editorSuggestWidget.selectedForeground': themes.primary,
+      // 'editorSuggestWidget.selectedIconForeground': themes.primary,
+      // 'editorSuggestWidgetStatus.foreground': themes.primary,
+      // 'editorHoverWidget.foreground': themes.foreground,
+      // 'editorHoverWidget.background': themes.background,
+      // 'editorHoverWidget.border': themes.border,
+      // 'editorHoverWidget.highlightForeground': themes.primary,
+      // 'editorHoverWidget.statusBarBackground': themes.primary,
+      // 'editorGhostText.border': themes.primary,
+      // 'editorGhostText.background': themes.primary,
+      // 'editorGhostText.foreground': themes.primary,
+      // 'editorStickyScroll.background': themes.primary,
+      // 'editorStickyScrollHover.background': themes.primary,
+      // 'debugExceptionWidget.background': themes.primary,
+      // 'debugExceptionWidget.border': themes.primary,
+      // 'editorMarkerNavigation.background':themes.primary,
+      // 'editorMarkerNavigationError.background':themes.primary,
+      // 'editorMarkerNavigationWarning.background':themes.primary,
+      // 'editorMarkerNavigationInfo.background':themes.primary,
+      // 'editorMarkerNavigationError.headerBackground':themes.primary,
+      // 'editorMarkerNavigationWarning.headerBackground':themes.primary,
+      // 'editorMarkerNavigationInfo.headerBackground':themes.primary,
+
+      // Peek view colors
+      // 'peekView.border': themes.primary,
+      // 'peekViewEditor.background': themes.primary,
+      // 'peekViewEditorGutter.background': themes.primary,
+      // 'peekViewEditor.matchHighlightBackground': themes.primary,
+      // 'peekViewEditor.matchHighlightBorder': themes.primary,
+      // 'peekViewResult.background': themes.primary,
+      // 'peekViewResult.fileForeground': themes.primary,
+      // 'peekViewResult.lineForeground': themes.primary,
+      // 'peekViewResult.matchHighlightBackground': themes.primary,
+      // 'peekViewResult.selectionBackground': themes.primary,
+      // 'peekViewResult.selectionForeground': themes.primary,
+      // 'peekViewTitle.background': themes.primary,
+      // 'peekViewTitleDescription.foreground': themes.primary,
+      // 'peekViewTitleLabel.foreground': themes.primary,
+      // 'peekViewEditorStickyScroll.background': themes.primary,
+
+      // Merge conflicts colors
+      // 'merge.currentHeaderBackground': themes.primary,
+      // 'merge.currentContentBackground': themes.primary,
+      // 'merge.incomingHeaderBackground': themes.primary,
+      // 'merge.incomingContentBackground': themes.primary,
+      // 'merge.border': themes.primary,
+      // 'merge.commonContentBackground': themes.primary,
+      // 'merge.commonHeaderBackground': themes.primary,
+      // 'editorOverviewRuler.currentContentForeground': themes.primary,
+      // 'editorOverviewRuler.incomingContentForeground': themes.primary,
+      // 'editorOverviewRuler.commonContentForeground': themes.primary,
+      // 'editorOverviewRuler.commentForeground': themes.primary,
+      // 'editorOverviewRuler.commentUnresolvedForeground': themes.primary,
+      // 'mergeEditor.change.background': themes.primary,
+      // 'mergeEditor.change.word.background': themes.primary,
+      // 'mergeEditor.conflict.unhandledUnfocused.border': themes.primary,
+      // 'mergeEditor.conflict.unhandledFocused.border': themes.primary,
+      // 'mergeEditor.conflict.handledUnfocused.border': themes.primary,
+      // 'mergeEditor.conflict.handledFocused.border': themes.primary,
+      // 'mergeEditor.conflict.handled.minimapOverViewRuler': themes.primary,
+      // 'mergeEditor.conflict.unhandled.minimapOverViewRuler': themes.primary,
+      // 'mergeEditor.conflictingLines.background': themes.primary,
+      // 'mergeEditor.changeBase.background': themes.primary,
+      // 'mergeEditor.changeBase.word.background': themes.primary,
+      // 'mergeEditor.conflict.input1.background': themes.primary,
+      // 'mergeEditor.conflict.input2.background': themes.primary,
+
+      // Panel colors
+      'panel.background': themes.background,
+      'panel.border': themes.border,
+      'panel.dropBorder': themes.primaryBackground,
+      'panelTitle.activeBorder': themes.border,
+      'panelTitle.activeForeground': themes.primary,
+      'panelTitle.inactiveForeground': themes.foreground,
+      'panelInput.border': themes.border,
+      // 'panelSection.border': themes.error,
+      // 'panelSection.dropBackground': themes.background,
+      // 'panelSectionHeader.background': themes.primary,
+      // 'panelSectionHeader.foreground': themes.primary,
+      // 'panelSectionHeader.border': themes.primary,
+
+      // Status Bar colors
+      'statusBar.background': themes.background,
+      'statusBar.foreground': themes.primary,
+      'statusBar.border': themes.border,
+      'statusBar.debuggingBackground': themes.background,
+      'statusBar.debuggingForeground': themes.primary,
+      'statusBar.debuggingBorder': themes.border,
+      'statusBar.noFolderForeground': themes.primary,
+      'statusBar.noFolderBackground': themes.background,
+      'statusBar.noFolderBorder': themes.border,
+      // 'statusBarItem.activeBackground': themes.primary,
+      // 'statusBarItem.hoverForeground': themes.foreground,
+      // 'statusBarItem.hoverBackground': themes.primary,
+      // 'statusBarItem.prominentForeground': themes.error,
+      // 'statusBarItem.prominentBackground': themes.primary,
+      // 'statusBarItem.prominentHoverForeground': themes.primary,
+      // 'statusBarItem.prominentHoverBackground': themes.primary,
+      // 'statusBarItem.remoteBackground': themes.primary,
+      // 'statusBarItem.remoteForeground': themes.primary,
+      // 'statusBarItem.remoteHoverBackground': themes.primary,
+      // 'statusBarItem.remoteHoverForeground': themes.primary,
+      // 'statusBarItem.errorBackground': themes.primary,
+      // 'statusBarItem.errorForeground': themes.error,
+      // 'statusBarItem.errorHoverBackground': themes.primary,
+      // 'statusBarItem.errorHoverForeground': themes.primary,
+      // 'statusBarItem.warningBackground': themes.primary,
+      // 'statusBarItem.warningForeground': themes.primary,
+      // 'statusBarItem.warningHoverBackground': themes.primary,
+      // 'statusBarItem.warningHoverForeground': themes.primary,
+      // 'statusBarItem.compactHoverBackground': themes.primary,
+      // 'statusBarItem.focusBorder': themes.primary,
+      // 'statusBar.focusBorder': themes.primary,
+      // 'statusBarItem.offlineBackground': themes.primary,
+      // 'statusBarItem.offlineForeground': themes.primary,
+      // 'statusBarItem.offlineHoverForeground': themes.primary,
+      // 'statusBarItem.offlineHoverBackground': themes.primary,
+
+      // Title Bar colors
+      // 'titleBar.activeBackground': themes.background,
+      // 'titleBar.activeForeground': themes.primary,
+      // 'titleBar.inactiveBackground': themes.background,
+      // 'titleBar.inactiveForeground': themes.primary,
+      // 'titleBar.border': themes.primary,
+
+      // Menu Bar colors
+      // 'menubar.selectionForeground': themes.primary,
+      // 'menubar.selectionBackground': themes.primary,
+      // 'menubar.selectionBorder': themes.primary,
+      // 'menu.foreground': themes.primary,
+      // 'menu.background': themes.primary,
+      // 'menu.selectionForeground': themes.primary,
+      // 'menu.selectionBackground': themes.primary,
+      // 'menu.selectionBorder': themes.primary,
+      // 'menu.separatorBackground': themes.primary,
+      // 'menu.border': themes.primary,
+
+      // Command Center colors
+      // 'commandCenter.foreground': themes.primary,
+      // 'commandCenter.activeForeground': themes.primary,
+      // 'commandCenter.background': themes.primary,
+      // 'commandCenter.activeBackground': themes.primary,
+      // 'commandCenter.border': themes.primary,
+      // 'commandCenter.inactiveForeground': themes.primary,
+      // 'commandCenter.inactiveBorder': themes.primary,
+      // 'commandCenter.activeBorder': themes.primary,
+      // 'commandCenter.debuggingBackground': themes.primary,
+
+      // Notification colors
+      'notificationCenter.border': themes.border,
+      'notificationCenterHeader.foreground': themes.primary,
+      'notificationCenterHeader.background': themes.background,
+      'notificationToast.border': themes.border,
+      'notifications.foreground': themes.foreground,
+      'notifications.background': themes.background,
+      'notifications.border': themes.border,
+      // 'notificationLink.foreground': themes.primary,
+      // 'notificationsErrorIcon.foreground': themes.primary,
+      // 'notificationsWarningIcon.foreground': themes.primary,
+      // 'notificationsInfoIcon.foreground': themes.primary,
+
+      // Banner colors
+      // 'banner.background': themes.primary,
+      // 'banner.foreground': themes.primary,
+      // 'banner.iconForeground': themes.primary,
+
+      // Extensions colors
+      'extensionButton.prominentForeground': themes.primary,
+      // 'extensionButton.prominentBackground': themes.background,
+      'extensionButton.prominentHoverBackground': themes.background,
+      // 'extensionButton.background': themes.primary,
+      'extensionButton.foreground': themes.primary,
+      'extensionButton.hoverBackground': themes.background,
+      // 'extensionButton.separator': themes.primary,
+      // 'extensionBadge.remoteBackground': themes.primary,
+      // 'extensionBadge.remoteForeground': themes.primary,
+      // 'extensionIcon.starForeground': themes.primary,
+      // 'extensionIcon.verifiedForeground': themes.primary,
+      // 'extensionIcon.preReleaseForeground': themes.primary,
+      // 'extensionIcon.sponsorForeground': themes.primary,
+
+      // Quick picker colors
+      // 'pickerGroup.border': themes.primary,
+      // 'pickerGroup.foreground': themes.primary,
+      // 'quickInput.background': themes.primary,
+      // 'quickInput.foreground': themes.primary,
+      // 'quickInputList.focusBackground': themes.primary,
+      // 'quickInputList.focusForeground': themes.primary,
+      // 'quickInputList.focusIconForeground': themes.primary,
+      // 'quickInputTitle.background': themes.primary,
+
+      // Keybinding label colors
+      'keybindingLabel.background': themes.background,
+      'keybindingLabel.foreground': themes.primary,
+      'keybindingLabel.border': themes.border,
+      'keybindingLabel.bottomBorder': themes.border,
+
+      // Keyboard shortcut table colors
+      'keybindingTable.headerBackground': themes.background,
+      'keybindingTable.rowsBackground': themes.background,
+
+      // Integrated Terminal colors
+      'terminal.background': themes.background,
+      'terminal.border': themes.border,
+      'terminal.foreground': themes.foreground,
+      // 'terminal.ansiBlack': themes.primary,
+      // 'terminal.ansiBlue': themes.primary,
+      // 'terminal.ansiBrightBlack': themes.primary,
+      // 'terminal.ansiBrightBlue': themes.primary,
+      // 'terminal.ansiBrightCyan': themes.primary,
+      // 'terminal.ansiBrightGreen': themes.primary,
+      // 'terminal.ansiBrightMagenta': themes.primary,
+      // 'terminal.ansiBrightRed': themes.primary,
+      // 'terminal.ansiBrightWhite': themes.primary,
+      // 'terminal.ansiBrightYellow': themes.primary,
+      // 'terminal.ansiCyan': themes.primary,
+      // 'terminal.ansiGreen': themes.primary,
+      // 'terminal.ansiMagenta': themes.primary,
+      // 'terminal.ansiRed': themes.primary,
+      // 'terminal.ansiWhite': themes.primary,
+      // 'terminal.ansiYellow': themes.primary,
+      // 'terminal.selectionBackground': themes.primary,
+      // 'terminal.selectionForeground': themes.primary,
+      // 'terminal.inactiveSelectionBackground': themes.primary,
+      'terminal.findMatchBackground': themes.background,
+      'terminal.findMatchBorder': themes.border,
+      // 'terminal.findMatchHighlightBackground': themes.primary,
+      'terminal.findMatchHighlightBorder': themes.border,
+      // 'terminal.hoverHighlightBackground': themes.primary,
+      'terminalCursor.background': themes.background,
+      'terminalCursor.foreground': themes.primary,
+      // 'terminal.dropBackground': themes.primary,
+      // 'terminal.tab.activeBorder': themes.primary,
+      // 'terminalCommandDecoration.defaultBackground': themes.primary,
+      // 'terminalCommandDecoration.successBackground': themes.primary,
+      // 'terminalCommandDecoration.errorBackground': themes.primary,
+      // 'terminalOverviewRuler.cursorForeground': themes.primary,
+      // 'terminalOverviewRuler.findMatchForeground': themes.primary,
+
+      // Debug colors
+      'debugToolBar.background': themes.background,
+      'debugToolBar.border': themes.border,
+      'editor.stackFrameHighlightBackground': themes.primaryBackground,
+      'editor.focusedStackFrameHighlightBackground': themes.primaryBackground,
+      'editor.inlineValuesForeground': colors.white,
+      'editor.inlineValuesBackground': themes.primaryBackground,
+      // 'debugView.exceptionLabelForeground': themes.primary,
+      // 'debugView.exceptionLabelBackground': themes.primary,
+      'debugView.stateLabelForeground': themes.primary,
+      'debugView.stateLabelBackground': themes.background,
+      'debugView.valueChangedHighlight': themes.primary,
+      'debugTokenExpression.name': themes.primary,
+      // 'debugTokenExpression.value': themes.primary,
+      // 'debugTokenExpression.string': themes.primary,
+      // 'debugTokenExpression.boolean': themes.primary,
+      // 'debugTokenExpression.number': themes.primary,
+      // 'debugTokenExpression.error': themes.primary,
+
+      // Testing colors
+      // 'testing.iconFailed': themes.primary,
+      // 'testing.iconErrored': themes.primary,
+      // 'testing.iconPassed': themes.primary,
+      // 'testing.runAction': themes.primary,
+      // 'testing.iconQueued': themes.primary,
+      // 'testing.iconUnset': themes.primary,
+      // 'testing.iconSkipped': themes.primary,
+      // 'testing.peekBorder': themes.primary,
+      // 'testing.peekHeaderBackground': themes.primary,
+      // 'testing.message.error.decorationForeground': themes.primary,
+      // 'testing.message.error.lineBackground': themes.primary,
+      // 'testing.message.info.decorationForeground': themes.primary,
+      // 'testing.message.info.lineBackground': themes.primary,
+
+      // Welcome page colors
+      // 'welcomePage.background': themes.primary,
+      // 'welcomePage.progress.background': themes.primary,
+      // 'welcomePage.progress.foreground': themes.primary,
+      // 'welcomePage.tileBackground': themes.primary,
+      // 'welcomePage.tileHoverBackground': themes.primary,
+      // 'welcomePage.tileBorder': themes.primary,
+      // 'walkThrough.embeddedEditorBackground': themes.primary,
+      // 'walkthrough.stepTitle.foreground': themes.primary,
+
+      // Git colors
+      // 'gitDecoration.addedResourceForeground': themes.primary,
+      // 'gitDecoration.modifiedResourceForeground': themes.primary,
+      // 'gitDecoration.deletedResourceForeground': themes.primary,
+      // 'gitDecoration.renamedResourceForeground': themes.primary,
+      // 'gitDecoration.stageModifiedResourceForeground': themes.primary,
+      // 'gitDecoration.stageDeletedResourceForeground': themes.primary,
+      // 'gitDecoration.untrackedResourceForeground': themes.primary,
+      // 'gitDecoration.ignoredResourceForeground': themes.primary,
+      // 'gitDecoration.conflictingResourceForeground': themes.primary,
+      // 'gitDecoration.submoduleResourceForeground': themes.primary,
+
+      // Settings Editor colors
+      // 'settings.headerForeground': themes.primary,
+      // 'settings.modifiedItemIndicator': themes.primary,
+      // 'settings.dropdownBackground': themes.primary,
+      // 'settings.dropdownForeground': themes.primary,
+      // 'settings.dropdownBorder': themes.primary,
+      // 'settings.dropdownListBorder': themes.primary,
+      // 'settings.checkboxBackground': themes.primary,
+      // 'settings.checkboxForeground': themes.primary,
+      // 'settings.checkboxBorder': themes.primary,
+      // 'settings.rowHoverBackground': themes.primary,
+      // 'settings.textInputBackground': themes.primary,
+      // 'settings.textInputForeground': themes.primary,
+      // 'settings.textInputBorder': themes.primary,
+      // 'settings.numberInputBackground': themes.primary,
+      // 'settings.numberInputForeground': themes.primary,
+      // 'settings.numberInputBorder': themes.primary,
+      // 'settings.focusedRowBackground': themes.primary,
+      // 'settings.focusedRowBorder': themes.primary,
+      // 'settings.headerBorder': themes.primary,
+      // 'settings.sashBorder': themes.primary,
+      // 'settings.settingsHeaderHoverForeground': themes.primary,
+
+      // Breadcrumbs colors
+      'breadcrumb.foreground': themes.foreground,
+      // 'breadcrumb.background': themes.primary,
+      'breadcrumb.focusForeground': themes.primary,
+      'breadcrumb.activeSelectionForeground': themes.primary,
+      // 'breadcrumbPicker.background': themes.primary,
+
+      // Snippets colors
+      // 'editor.snippetTabstopHighlightBackground': themes.primary,
+      // 'editor.snippetTabstopHighlightBorder': themes.primary,
+      // 'editor.snippetFinalTabstopHighlightBackground': themes.primary,
+      // 'editor.snippetFinalTabstopHighlightBorder': themes.primary,
+
+      // Symbol Icons colors
+      // 'symbolIcon.arrayForeground': themes.primary,
+      // 'symbolIcon.booleanForeground': themes.primary,
+      // 'symbolIcon.classForeground': themes.primary,
+      // 'symbolIcon.colorForeground': themes.primary,
+      // 'symbolIcon.constantForeground': themes.primary,
+      // 'symbolIcon.constructorForeground': themes.primary,
+      // 'symbolIcon.enumeratorForeground': themes.primary,
+      // 'symbolIcon.enumeratorMemberForeground': themes.primary,
+      // 'symbolIcon.eventForeground': themes.primary,
+      // 'symbolIcon.fieldForeground': themes.primary,
+      // 'symbolIcon.fileForeground': themes.primary,
+      // 'symbolIcon.folderForeground': themes.primary,
+      // 'symbolIcon.functionForeground': themes.primary,
+      // 'symbolIcon.interfaceForeground': themes.primary,
+      // 'symbolIcon.keyForeground': themes.primary,
+      // 'symbolIcon.keywordForeground': themes.primary,
+      // 'symbolIcon.methodForeground': themes.primary,
+      // 'symbolIcon.moduleForeground': themes.primary,
+      // 'symbolIcon.namespaceForeground': themes.primary,
+      // 'symbolIcon.nullForeground': themes.primary,
+      // 'symbolIcon.numberForeground': themes.primary,
+      // 'symbolIcon.objectForeground': themes.primary,
+      // 'symbolIcon.operatorForeground': themes.primary,
+      // 'symbolIcon.packageForeground': themes.primary,
+      // 'symbolIcon.propertyForeground': themes.primary,
+      // 'symbolIcon.referenceForeground': themes.primary,
+      // 'symbolIcon.snippetForeground': themes.primary,
+      // 'symbolIcon.stringForeground': themes.primary,
+      // 'symbolIcon.structForeground': themes.primary,
+      // 'symbolIcon.textForeground': themes.primary,
+      // 'symbolIcon.typeParameterForeground': themes.primary,
+      // 'symbolIcon.unitForeground': themes.primary,
+      // 'symbolIcon.variableForeground': themes.primary,
+
+      // Debug Icons colors
+      // 'debugIcon.breakpointForeground': themes.primary,
+      // 'debugIcon.breakpointDisabledForeground': themes.primary,
+      // 'debugIcon.breakpointUnverifiedForeground': themes.primary,
+      // 'debugIcon.breakpointCurrentStackframeForeground': themes.primary,
+      // 'debugIcon.breakpointStackframeForeground': themes.primary,
+      // 'debugIcon.startForeground': themes.primary,
+      // 'debugIcon.pauseForeground': themes.primary,
+      // 'debugIcon.stopForeground': themes.primary,
+      // 'debugIcon.disconnectForeground': themes.primary,
+      // 'debugIcon.restartForeground': themes.primary,
+      // 'debugIcon.stepOverForeground': themes.primary,
+      // 'debugIcon.stepIntoForeground': themes.primary,
+      // 'debugIcon.stepOutForeground': themes.primary,
+      // 'debugIcon.continueForeground': themes.primary,
+      // 'debugIcon.stepBackForeground': themes.primary,
+      // 'debugConsole.infoForeground': themes.primary,
+      // 'debugConsole.warningForeground': themes.primary,
+      // 'debugConsole.errorForeground': themes.primary,
+      // 'debugConsole.sourceForeground': themes.primary,
+      // 'debugConsoleInputIcon.foreground': themes.primary,
+
+      // Notebook colors
+      // 'notebook.editorBackground':themes.primary,
+      // 'notebook.cellBorderColor':themes.primary,
+      // 'notebook.cellHoverBackground':themes.primary,
+      // 'notebook.cellInsertionIndicator':themes.primary,
+      // 'notebook.cellStatusBarItemHoverBackground':themes.primary,
+      // 'notebook.cellToolbarSeparator':themes.primary,
+      // 'notebook.cellEditorBackground':themes.primary,
+      // 'notebook.focusedCellBackground':themes.primary,
+      // 'notebook.focusedCellBorder':themes.primary,
+      // 'notebook.focusedEditorBorder':themes.primary,
+      // 'notebook.inactiveFocusedCellBorder':themes.primary,
+      // 'notebook.inactiveSelectedCellBorder':themes.primary,
+      // 'notebook.outputContainerBackgroundColor':themes.primary,
+      // 'notebook.outputContainerBorderColor':themes.primary,
+      // 'notebook.selectedCellBackground':themes.primary,
+      // 'notebook.selectedCellBorder':themes.primary,
+      // 'notebook.symbolHighlightBackground':themes.primary,
+      // 'notebookScrollbarSlider.activeBackground':themes.primary,
+      // 'notebookScrollbarSlider.background':themes.primary,
+      // 'notebookScrollbarSlider.hoverBackground':themes.primary,
+      // 'notebookStatusErrorIcon.foreground':themes.primary,
+      // 'notebookStatusRunningIcon.foreground':themes.primary,
+      // 'notebookStatusSuccessIcon.foreground':themes.primary,
+      // 'notebookEditorOverviewRuler.runningCellForeground':themes.primary,
+
+      // Chart colors
+      // 'charts.foreground': themes.primary,
+      // 'charts.lines': themes.primary,
+      // 'charts.red': themes.primary,
+      // 'charts.blue': themes.primary,
+      // 'charts.yellow': themes.primary,
+      // 'charts.orange': themes.primary,
+      // 'charts.green': themes.primary,
+      // 'charts.purple': themes.primary,
+
+      // Ports Colors
+      // 'ports.iconRunningProcessForeground':themes.primary,
+
+      // Comments View colors
+      // 'commentsView.resolvedIcon': themes.primary,
+      // 'commentsView.unresolvedIcon': themes.primary,
+
+      // Action Bar colors
+      'actionBar.toggledBackground': themes.primaryBackground
+
+      // Simple Find Widget
+      // 'simpleFindWidget.sashBorder':themes.primary,
     }
-    // semanticHighlighting: true,
-    // semanticTokenColors: {
-    //   namespace: vitesse('namespace'),
-    //   property: vitesse('property'),
-    //   interface: vitesse('interface'),
-    //   type: vitesse('interface'),
-    //   class: vitesse('class')
-    // },
-    // tokenColors: [
-    //   {
-    //     scope: ['comment', 'punctuation.definition.comment', 'string.comment'],
-    //     settings: {
-    //       foreground: vitesse('comment')
-    //     }
-    //   },
-    //   {
-    //     scope: [
-    //       'delimiter.bracket',
-    //       'delimiter',
-    //       'invalid.illegal.character-not-allowed-here.html',
-    //       'keyword.operator.rest',
-    //       'keyword.operator.spread',
-    //       'keyword.operator.type.annotation',
-    //       'keyword.operator.relational',
-    //       'keyword.operator.assignment',
-    //       'meta.brace',
-    //       'meta.tag.block.any.html',
-    //       'meta.tag.inline.any.html',
-    //       'meta.tag.structure.input.void.html',
-    //       'meta.type.annotation',
-    //       'meta.embedded.block.github-actions-expression',
-    //       'storage.type.function.arrow',
-    //       'keyword.operator.type',
-    //       'meta.objectliteral.ts',
-    //       'punctuation'
-    //     ],
-    //     settings: {
-    //       foreground: punctuation
-    //     }
-    //   },
-    //   {
-    //     scope: [
-    //       'constant',
-    //       'entity.name.constant',
-    //       'variable.language',
-    //       'meta.definition.variable'
-    //     ],
-    //     settings: {
-    //       foreground: vitesse('constant')
-    //     }
-    //   },
-    //   {
-    //     scope: ['entity', 'entity.name'],
-    //     settings: {
-    //       foreground: vitesse('function')
-    //     }
-    //   },
-    //   {
-    //     scope: 'variable.parameter.function',
-    //     settings: {
-    //       foreground
-    //     }
-    //   },
-    //   {
-    //     scope: ['entity.name.tag', 'tag.html'],
-    //     settings: {
-    //       foreground: vitesse('keyword')
-    //     }
-    //   },
-    //   {
-    //     scope: 'entity.name.function',
-    //     settings: {
-    //       foreground: vitesse('function')
-    //     }
-    //   },
-    //   {
-    //     scope: ['keyword', 'storage.type.class.jsdoc'],
-    //     settings: {
-    //       foreground: vitesse('keyword')
-    //     }
-    //   },
-    //   {
-    //     scope: [
-    //       'storage',
-    //       'storage.type',
-    //       'support.type.builtin',
-    //       'constant.language.undefined',
-    //       'constant.language.null'
-    //     ],
-    //     settings: {
-    //       foreground: vitesse('builtin')
-    //     }
-    //   },
-    //   {
-    //     scope: [
-    //       'text.html.derivative',
-    //       'storage.modifier.package',
-    //       'storage.modifier.import',
-    //       'storage.type.java'
-    //     ],
-    //     settings: {
-    //       foreground
-    //     }
-    //   },
-    //   {
-    //     scope: [
-    //       'string',
-    //       'string punctuation.section.embedded source',
-    //       'attribute.value'
-    //     ],
-    //     settings: {
-    //       foreground: vitesse('string')
-    //     }
-    //   },
-    //   {
-    //     scope: [
-    //       'punctuation.definition.string',
-    //       'punctuation.support.type.property-name'
-    //     ],
-    //     settings: {
-    //       foreground: vitesse('string', '99')
-    //     }
-    //   },
-    //   {
-    //     scope: 'support',
-    //     settings: {
-    //       foreground: vitesse('property')
-    //     }
-    //   },
-    //   {
-    //     scope: [
-    //       'property',
-    //       'meta.property-name',
-    //       'meta.object-literal.key',
-    //       'entity.name.tag.yaml',
-    //       'attribute.name'
-    //     ],
-    //     settings: {
-    //       foreground: vitesse('property')
-    //     }
-    //   },
-    //   {
-    //     scope: [
-    //       'entity.other.attribute-name',
-    //       'invalid.deprecated.entity.other.attribute-name.html'
-    //     ],
-    //     settings: {
-    //       foreground: vitesse('variable')
-    //     }
-    //   },
-    //   {
-    //     scope: ['variable', 'identifier'],
-    //     settings: {
-    //       foreground: vitesse('variable')
-    //     }
-    //   },
-    //   {
-    //     scope: ['support.type.primitive', 'entity.name.type'],
-    //     settings: {
-    //       foreground: vitesse('type')
-    //     }
-    //   },
-    //   {
-    //     scope: 'namespace',
-    //     settings: {
-    //       foreground: vitesse('namespace')
-    //     }
-    //   },
-    //   {
-    //     scope: [
-    //       'keyword.operator',
-    //       'keyword.operator.assignment.compound',
-    //       'meta.var.expr.ts'
-    //     ],
-    //     settings: {
-    //       foreground: vitesse('operator')
-    //     }
-    //   },
-    //   {
-    //     scope: 'invalid.broken',
-    //     settings: {
-    //       fontStyle: 'italic',
-    //       foreground: primer.red[7]
-    //     }
-    //   },
-    //   {
-    //     scope: 'invalid.deprecated',
-    //     settings: {
-    //       fontStyle: 'italic',
-    //       foreground: primer.red[7]
-    //     }
-    //   },
-    //   {
-    //     scope: 'invalid.illegal',
-    //     settings: {
-    //       fontStyle: 'italic',
-    //       foreground: primer.red[7]
-    //     }
-    //   },
-    //   {
-    //     scope: 'invalid.unimplemented',
-    //     settings: {
-    //       fontStyle: 'italic',
-    //       foreground: primer.red[7]
-    //     }
-    //   },
-    //   {
-    //     scope: 'carriage-return',
-    //     settings: {
-    //       fontStyle: 'italic underline',
-    //       background: pick({ light: primer.red[5], dark: primer.red[6] }),
-    //       foreground: primer.gray[0],
-    //       content: '^M'
-    //     }
-    //   },
-    //   {
-    //     scope: 'message.error',
-    //     settings: {
-    //       foreground: primer.red[7]
-    //     }
-    //   },
-    //   {
-    //     scope: 'string variable',
-    //     settings: {
-    //       foreground: vitesse('string')
-    //     }
-    //   },
-    //   {
-    //     scope: ['source.regexp', 'string.regexp'],
-    //     settings: {
-    //       foreground: vitesse('regex')
-    //     }
-    //   },
-    //   {
-    //     scope: [
-    //       'string.regexp.character-class',
-    //       'string.regexp constant.character.escape',
-    //       'string.regexp source.ruby.embedded',
-    //       'string.regexp string.regexp.arbitrary-repitition'
-    //     ],
-    //     settings: {
-    //       foreground: vitesse('string')
-    //     }
-    //   },
-    //   {
-    //     scope: 'string.regexp constant.character.escape',
-    //     settings: {
-    //       foreground: vitesse('yellow')
-    //     }
-    //   },
-    //   {
-    //     scope: ['support.constant'],
-    //     settings: {
-    //       foreground: vitesse('constant')
-    //     }
-    //   },
-    //   {
-    //     scope: ['constant.numeric', 'number'],
-    //     settings: {
-    //       foreground: vitesse('number')
-    //     }
-    //   },
-    //   {
-    //     scope: ['keyword.other.unit'],
-    //     settings: {
-    //       foreground: vitesse('builtin')
-    //     }
-    //   },
-    //   {
-    //     scope: ['constant.language.boolean', 'constant.language'],
-    //     settings: {
-    //       foreground: vitesse('boolean')
-    //     }
-    //   },
-    //   {
-    //     scope: 'meta.module-reference',
-    //     settings: {
-    //       foreground: themes.primary
-    //     }
-    //   },
-    //   {
-    //     scope: 'punctuation.definition.list.begin.markdown',
-    //     settings: {
-    //       foreground: vitesse('orange')
-    //     }
-    //   },
-    //   {
-    //     scope: ['markup.heading', 'markup.heading entity.name'],
-    //     settings: {
-    //       fontStyle: 'bold',
-    //       foreground: themes.primary
-    //     }
-    //   },
-    //   {
-    //     scope: 'markup.quote',
-    //     settings: {
-    //       foreground: vitesse('interface')
-    //     }
-    //   },
-    //   {
-    //     scope: 'markup.italic',
-    //     settings: {
-    //       fontStyle: 'italic',
-    //       foreground
-    //     }
-    //   },
-    //   {
-    //     scope: 'markup.bold',
-    //     settings: {
-    //       fontStyle: 'bold',
-    //       foreground
-    //     }
-    //   },
-    //   {
-    //     scope: 'markup.raw',
-    //     settings: {
-    //       foreground: themes.primary
-    //     }
-    //   },
-    //   {
-    //     scope: [
-    //       'markup.deleted',
-    //       'meta.diff.header.from-file',
-    //       'punctuation.definition.deleted'
-    //     ],
-    //     settings: {
-    //       background: primer.red[0],
-    //       foreground: primer.red[7]
-    //     }
-    //   },
-    //   {
-    //     scope: [
-    //       'markup.inserted',
-    //       'meta.diff.header.to-file',
-    //       'punctuation.definition.inserted'
-    //     ],
-    //     settings: {
-    //       background: primer.green[0],
-    //       foreground: primer.green[6]
-    //     }
-    //   },
-    //   {
-    //     scope: ['markup.changed', 'punctuation.definition.changed'],
-    //     settings: {
-    //       background: primer.orange[1],
-    //       foreground: primer.orange[6]
-    //     }
-    //   },
-    //   {
-    //     scope: ['markup.ignored', 'markup.untracked'],
-    //     settings: {
-    //       foreground: primer.gray[1],
-    //       background: primer.blue[6]
-    //     }
-    //   },
-    //   {
-    //     scope: 'meta.diff.range',
-    //     settings: {
-    //       foreground: pick({ light: primer.purple[5], dark: primer.purple[6] }),
-    //       fontStyle: 'bold'
-    //     }
-    //   },
-    //   {
-    //     scope: 'meta.diff.header',
-    //     settings: {
-    //       foreground: primer.blue[6]
-    //     }
-    //   },
-    //   {
-    //     scope: 'meta.separator',
-    //     settings: {
-    //       fontStyle: 'bold',
-    //       foreground: primer.blue[6]
-    //     }
-    //   },
-    //   {
-    //     scope: 'meta.output',
-    //     settings: {
-    //       foreground: primer.blue[6]
-    //     }
-    //   },
-    //   {
-    //     scope: [
-    //       'brackethighlighter.tag',
-    //       'brackethighlighter.curly',
-    //       'brackethighlighter.round',
-    //       'brackethighlighter.square',
-    //       'brackethighlighter.angle',
-    //       'brackethighlighter.quote'
-    //     ],
-    //     settings: {
-    //       foreground: primer.gray[6]
-    //     }
-    //   },
-    //   {
-    //     scope: 'brackethighlighter.unmatched',
-    //     settings: {
-    //       foreground: primer.red[7]
-    //     }
-    //   },
-    //   {
-    //     scope: [
-    //       'constant.other.reference.link',
-    //       'string.other.link',
-    //       'punctuation.definition.string.begin.markdown',
-    //       'punctuation.definition.string.end.markdown'
-    //     ],
-    //     settings: {
-    //       foreground: vitesse('string')
-    //     }
-    //   },
-    //   {
-    //     scope: [
-    //       'markup.underline.link.markdown',
-    //       'markup.underline.link.image.markdown'
-    //     ],
-    //     settings: {
-    //       foreground: secondaryForeground,
-    //       fontStyle: 'underline'
-    //     }
-    //   },
-    //   {
-    //     scope: ['type.identifier'],
-    //     settings: {
-    //       foreground: vitesse('class')
-    //     }
-    //   },
-    //   {
-    //     scope: ['entity.other.attribute-name.html.vue'],
-    //     settings: {
-    //       foreground: vitesse('function')
-    //     }
-    //   },
-    //   {
-    //     scope: ['invalid.illegal.unrecognized-tag.html'],
-    //     settings: {
-    //       fontStyle: 'normal'
-    //     }
-    //   }
-    // ],
-    // rules: []
   }
-
-  // monaco rules
-  // const rules: any[] = []
-
-  // theme.tokenColors.forEach(({ scope, settings }: any) => {
-  //   for (const s of toArray(scope)) {
-  //     rules.push({
-  //       token: s,
-  //       foreground: settings.foreground?.replace('#', '')
-  //     })
-  //   }
-  // })
-
-  // theme.rules = rules
-
   return theme
 }
