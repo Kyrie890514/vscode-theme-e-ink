@@ -1,6 +1,7 @@
 {
+  "publisher": "Kyrie890514",
   "name": "vscode-theme-e-ink",
-  "displayName": "vscode-theme-e-ink",
+  "displayName": "E-Ink theme",
   "description": "A VSCode theme designed specifically for E-Ink displays.",
   "repository": {
     "type": "git",
