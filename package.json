@@ -2,6 +2,11 @@
   "name": "vscode-theme-e-ink",
   "displayName": "vscode-theme-e-ink",
   "description": "A VSCode theme designed specifically for E-Ink displays.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kyrie890514/vscode-theme-e-ink"
+  },
+  "license": "MIT",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.83.0"
