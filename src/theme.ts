@@ -897,6 +897,10 @@ export default function getTheme() {
           'string.other.link.description.title.markdown'
         ],
         settings: themes.default
+      },
+      {
+        scope: ['entity.name.tag.yaml'],
+        settings: themes.default
       }
     ]
   }
