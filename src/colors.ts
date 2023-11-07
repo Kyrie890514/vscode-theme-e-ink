@@ -1,55 +1,41 @@
 const colors = {
-  black: '#282a36',
+  black: '#000000',
   white: '#ffffff',
-  blue: '#00bfff',
-  green: '#50fa7b',
-  lightpink: '#ff79c666',
-  pink: '#ff79c6',
-  purple: '#bd93f9',
-  red: '#ff5555',
-  orange: '#ffb86c'
+  gray: ['#dddddd', '#b4b4b3']
 }
 
+const format = (foreground: string, fontStyle: string) =>
+  fontStyle
+    ? {
+        foreground,
+        fontStyle
+      }
+    : {
+        foreground
+      }
+
 export default {
-  colors,
-  themes: {
-    primary: colors.pink,
-    primaryBackground: colors.lightpink,
-    secondary: colors.purple,
-    foreground: colors.black,
-    background: colors.white,
-    border: colors.pink,
-    error: colors.red,
-    warn: colors.orange
+  primary: colors.black,
+  secondary: colors.gray[1],
+  background: colors.white,
+  primaryBackground: colors.gray[0],
+  foreground: colors.black,
+  shadow: colors.white,
+  border: colors.black,
 
-    // activeForeground: ['#bfbaaa', '#4e4f47'],
-    // secondaryForeground: ['#dedcd590', '#393a3490'],
-    // ignored: ['#dedcd550', '#393a3450'],
-    // faded: ['#dedcd510', '#393a3410'],
+  comment: format(colors.gray[0], ''),
 
-    // activeBackground: ['#181818', '#f7f7f7'],
+  string: format(colors.gray[1], ''),
+  regex: format(colors.gray[1], ''),
+  number: format(colors.gray[1], ''),
+  boolean: format(colors.gray[1], ''),
+  undefined: format(colors.gray[1], ''),
 
-    // lowBackground: ['#222', '#F1F0E9'],
-    // lowActiveBackground: ['#292929', '#E7E5DB'],
-    // lowBorder: ['#252525', '#E7E5DB'],
+  keyword: format(colors.black, 'italic'),
 
-    // comment: ['#758575dd', '#a0ada0'],
-    // string: ['#c98a7d', '#b56959'],
-    // variable: ['#bd976a', '#b07d48'],
-    // keyword: ['#4d9375', '#1e754f'],
-    // number: ['#4C9A91', '#2f798a'],
-    // boolean: ['#4d9375', '#1e754f'],
-    // operator: ['#cb7676', '#ab5959'],
-    // function: ['#80a665', '#59873a'],
-    // constant: ['#c99076', '#a65e2b'],
-    // class: ['#7f8ac7', '#5a6aa6'],
-    // interface: ['#5d99a9', '#2e808f'],
-    // type: ['#5DA994', '#2e8f82'],
-    // builtin: ['#cb7676', '#ab5959'],
-    // property: ['#b8a965', '#998418'],
-    // namespace: ['#db889a', '#b05a78'],
-    // punctuation: ['#666666', '#999999'],
-    // decorator: ['#bd8f8f', '#bd8f8f'],
-    // regex: ['#c4704f', '#ab5e3f'],
-  }
+  function: format(colors.black, 'bold'),
+
+  bold: format(colors.black, 'bold'),
+  default: format(colors.black, ''),
+  gray: format(colors.gray[1], '')
 }

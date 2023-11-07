@@ -1,8 +1,6 @@
-import _colors from './colors'
+import themes from './colors'
 
 export default function getTheme() {
-  const { colors, themes } = _colors
-
   const theme = {
     name: 'E-Ink',
     base: 'hc-light',
@@ -16,10 +14,10 @@ export default function getTheme() {
       focusBorder: themes.border,
       foreground: themes.foreground,
       'widget.border': themes.border,
-      'widget.shadow': colors.white,
+      'widget.shadow': themes.shadow,
       'selection.background': themes.primaryBackground,
       descriptionForeground: themes.foreground,
-      errorForeground: themes.error,
+      // errorForeground: themes.error,
       'icon.foreground': themes.primary,
       'sash.hoverBorder': themes.primary,
 
@@ -32,7 +30,7 @@ export default function getTheme() {
       'textBlockQuote.border': themes.border,
       'textCodeBlock.background': themes.background,
       'textLink.foreground': themes.secondary,
-      'textLink.activeForeground': colors.blue,
+      'textLink.activeForeground': themes.foreground,
       'textPreformat.foreground': themes.primary,
       'textSeparator.foreground': themes.primary,
 
@@ -42,19 +40,19 @@ export default function getTheme() {
       'toolbar.activeBackground': themes.primary,
 
       // Button control
-      'button.background': themes.primary,
-      'button.foreground': colors.white,
+      'button.background': themes.background,
+      'button.foreground': themes.foreground,
       'button.border': themes.border,
       'button.separator': themes.primary,
-      'button.hoverBackground': themes.primary,
-      'button.secondaryForeground': themes.primary,
-      'button.secondaryBackground': themes.background,
-      'button.secondaryHoverBackground': themes.primary,
+      'button.hoverBackground': themes.primaryBackground,
+      // 'button.secondaryForeground': themes.primary,
+      // 'button.secondaryBackground': themes.background,
+      // 'button.secondaryHoverBackground': themes.primary,
       'checkbox.background': themes.background,
-      'checkbox.foreground': themes.primary,
+      'checkbox.foreground': themes.foreground,
       'checkbox.border': themes.border,
       'checkbox.selectBackground': themes.primary,
-      'checkbox.selectBorder': themes.primary,
+      'checkbox.selectBorder': themes.border,
 
       // Dropdown control
       'dropdown.background': themes.background,
@@ -66,29 +64,29 @@ export default function getTheme() {
       'input.background': themes.background,
       'input.border': themes.border,
       'input.foreground': themes.foreground,
-      'input.placeholderForeground': colors.black,
+      'input.placeholderForeground': themes.secondary,
       'inputOption.activeBackground': themes.background,
       'inputOption.activeBorder': themes.border,
       'inputOption.activeForeground': themes.primary,
       'inputOption.hoverBackground': themes.background,
-      'inputValidation.errorBackground': themes.background,
-      'inputValidation.errorForeground': themes.warn,
-      'inputValidation.errorBorder': themes.border,
-      'inputValidation.infoBackground': themes.background,
-      'inputValidation.infoForeground': themes.foreground,
-      'inputValidation.infoBorder': themes.border,
-      'inputValidation.warningBackground': themes.background,
-      'inputValidation.warningForeground': themes.foreground,
-      'inputValidation.warningBorder': themes.border,
+      // 'inputValidation.errorBackground': themes.background,
+      // 'inputValidation.errorForeground': themes.warn,
+      // 'inputValidation.errorBorder': themes.border,
+      // 'inputValidation.infoBackground': themes.background,
+      // 'inputValidation.infoForeground': themes.foreground,
+      // 'inputValidation.infoBorder': themes.border,
+      // 'inputValidation.warningBackground': themes.background,
+      // 'inputValidation.warningForeground': themes.foreground,
+      // 'inputValidation.warningBorder': themes.border,
 
       // Scrollbar control
-      'scrollbar.shadow': colors.white,
-      'scrollbarSlider.activeBackground': themes.primary,
+      'scrollbar.shadow': themes.shadow,
+      'scrollbarSlider.activeBackground': themes.secondary,
       'scrollbarSlider.background': themes.primaryBackground,
-      'scrollbarSlider.hoverBackground': themes.primary,
+      'scrollbarSlider.hoverBackground': themes.secondary,
 
       // Badge
-      'badge.foreground': themes.primary,
+      'badge.foreground': themes.foreground,
       'badge.background': themes.background,
 
       // Progress bar
@@ -96,29 +94,29 @@ export default function getTheme() {
 
       // Lists and trees
       'list.activeSelectionBackground': themes.background,
-      'list.activeSelectionForeground': themes.primary,
-      'list.activeSelectionIconForeground': themes.primary,
+      'list.activeSelectionForeground': themes.foreground,
+      'list.activeSelectionIconForeground': themes.foreground,
       'list.dropBackground': themes.primaryBackground,
       'list.focusBackground': themes.background,
       'list.focusForeground': themes.foreground,
-      'list.focusHighlightForeground': themes.primary,
+      'list.focusHighlightForeground': themes.foreground,
       'list.focusOutline': themes.primary,
       'list.focusAndSelectionOutline': themes.primary,
-      'list.highlightForeground': themes.primary,
+      'list.highlightForeground': themes.foreground,
       'list.hoverBackground': themes.primaryBackground,
       'list.hoverForeground': themes.foreground,
       'list.inactiveSelectionBackground': themes.background,
-      'list.inactiveSelectionForeground': themes.primary,
-      'list.inactiveSelectionIconForeground': themes.primary,
+      'list.inactiveSelectionForeground': themes.foreground,
+      'list.inactiveSelectionIconForeground': themes.foreground,
       'list.inactiveFocusBackground': themes.background,
       'list.inactiveFocusOutline': themes.primary,
       'list.invalidItemForeground': themes.foreground,
-      'list.errorForeground': themes.error,
-      'list.warningForeground': themes.warn,
+      // 'list.errorForeground': themes.error,
+      // 'list.warningForeground': themes.warn,
       'listFilterWidget.background': themes.background,
       'listFilterWidget.outline': themes.primary,
       'listFilterWidget.noMatchesOutline': themes.primary,
-      'listFilterWidget.shadow': themes.background,
+      'listFilterWidget.shadow': themes.shadow,
       'list.filterMatchBackground': themes.primaryBackground,
       'list.filterMatchBorder': themes.border,
       'list.deemphasizedForeground': themes.foreground,
@@ -130,27 +128,27 @@ export default function getTheme() {
       // Activity Bar
       'activityBar.background': themes.background,
       'activityBar.dropBorder': themes.border,
-      'activityBar.foreground': themes.primary,
-      'activityBar.inactiveForeground': themes.primary,
+      'activityBar.foreground': themes.foreground,
+      'activityBar.inactiveForeground': themes.foreground,
       'activityBar.border': themes.border,
       'activityBarBadge.background': themes.background,
-      'activityBarBadge.foreground': themes.primary,
+      'activityBarBadge.foreground': themes.foreground,
       'activityBar.activeBorder': themes.border,
       'activityBar.activeBackground': themes.background,
       'activityBar.activeFocusBorder': themes.border,
 
       // Profiles
       'profileBadge.background': themes.background,
-      'profileBadge.foreground': themes.primary,
+      'profileBadge.foreground': themes.foreground,
 
       // Side Bar
       'sideBar.background': themes.background,
       'sideBar.foreground': themes.foreground,
       'sideBar.border': themes.border,
       'sideBar.dropBackground': themes.primaryBackground,
-      'sideBarTitle.foreground': themes.primary,
+      'sideBarTitle.foreground': themes.foreground,
       'sideBarSectionHeader.background': themes.background,
-      'sideBarSectionHeader.foreground': themes.primary,
+      'sideBarSectionHeader.foreground': themes.foreground,
       'sideBarSectionHeader.border': themes.border,
 
       // Minimap
@@ -183,7 +181,7 @@ export default function getTheme() {
       'editorGroup.dropIntoPromptBorder': themes.border,
       'tab.activeBackground': themes.background,
       'tab.unfocusedActiveBackground': themes.background,
-      'tab.activeForeground': themes.primary,
+      'tab.activeForeground': themes.foreground,
       'tab.border': themes.border,
       'tab.activeBorder': themes.border,
       'tab.unfocusedActiveBorder': themes.border,
@@ -193,12 +191,12 @@ export default function getTheme() {
       'tab.inactiveBackground': themes.background,
       'tab.unfocusedInactiveBackground': themes.background,
       'tab.inactiveForeground': themes.foreground,
-      'tab.unfocusedActiveForeground': themes.primary,
+      'tab.unfocusedActiveForeground': themes.foreground,
       'tab.unfocusedInactiveForeground': themes.foreground,
       'tab.hoverBackground': themes.background,
       'tab.unfocusedHoverBackground': themes.background,
-      'tab.hoverForeground': themes.primary,
-      'tab.unfocusedHoverForeground': themes.primary,
+      'tab.hoverForeground': themes.foreground,
+      'tab.unfocusedHoverForeground': themes.foreground,
       'tab.hoverBorder': themes.border,
       'tab.unfocusedHoverBorder': themes.border,
       'tab.activeModifiedBorder': themes.border,
@@ -213,10 +211,10 @@ export default function getTheme() {
       'editor.background': themes.background,
       'editor.foreground': themes.foreground,
       'editorLineNumber.foreground': themes.foreground,
-      'editorLineNumber.activeForeground': themes.primary,
+      'editorLineNumber.activeForeground': themes.secondary,
       'editorLineNumber.dimmedForeground': themes.foreground,
       'editorCursor.background': themes.background,
-      'editorCursor.foreground': themes.primary,
+      'editorCursor.foreground': themes.foreground,
       'editor.selectionBackground': themes.primaryBackground,
       'editor.selectionForeground': themes.background,
       'editor.inactiveSelectionBackground': themes.primaryBackground,
@@ -230,20 +228,20 @@ export default function getTheme() {
       // 'editor.wordHighlightTextBorder': themes.border,
       'editor.findMatchBackground': themes.primaryBackground,
       // 'editor.findMatchHighlightBackground': themes.background,
-      'editor.findRangeHighlightBackground': themes.primaryBackground,
-      'editor.findMatchBorder': colors.lightpink,
+      'editor.findRangeHighlightBackground': themes.background,
+      'editor.findMatchBorder': themes.border,
       // 'editor.findMatchHighlightBorder': colors.white,
-      'editor.findRangeHighlightBorder': colors.lightpink,
-      'search.resultsInfoForeground': themes.primary,
+      'editor.findRangeHighlightBorder': themes.border,
+      'search.resultsInfoForeground': themes.foreground,
       // 'searchEditor.findMatchBackground':themes.foreground,
       // 'searchEditor.findMatchBorder':themes.foreground,
       // 'searchEditor.textInputBorder':themes.foreground,
       // 'editor.hoverHighlightBackground':themes.background,
       // 'editor.lineHighlightBackground':themes.primary,
-      'editor.lineHighlightBorder': themes.primary,
+      'editor.lineHighlightBorder': themes.border,
       // 'editorUnicodeHighlight.border':themes.primary,
       // 'editorUnicodeHighlight.background':themes.primary,
-      'editorLink.activeForeground': colors.blue,
+      'editorLink.activeForeground': themes.secondary,
       // 'editor.rangeHighlightBackground':themes.primary,
       // 'editor.rangeHighlightBorder':themes.primary,
       'editor.symbolHighlightBackground': themes.primaryBackground,
@@ -269,20 +267,20 @@ export default function getTheme() {
       // 'editorInlayHint.typeBackground': themes.primary,
       // 'editorInlayHint.parameterForeground': themes.primary,
       // 'editorInlayHint.parameterBackground': themes.primary,
-      'editorRuler.foreground': themes.primary,
+      'editorRuler.foreground': themes.foreground,
       'editor.linkedEditingBackground': themes.primary,
-      // 'editorCodeLens.foreground': themes.primary,
-      'editorLightBulb.foreground': themes.primary,
-      'editorLightBulbAutoFix.foreground': themes.primary,
+      'editorCodeLens.foreground': themes.foreground,
+      'editorLightBulb.foreground': themes.foreground,
+      'editorLightBulbAutoFix.foreground': themes.foreground,
       // 'editorBracketMatch.background':themes.primary,
       // 'editorBracketMatch.border':themes.primary,
-      'editorBracketHighlight.foreground1': themes.primary,
-      'editorBracketHighlight.foreground2': colors.red,
-      'editorBracketHighlight.foreground3': themes.secondary,
-      'editorBracketHighlight.foreground4': colors.blue,
-      'editorBracketHighlight.foreground5': colors.orange,
-      'editorBracketHighlight.foreground6': colors.green,
-      'editorBracketHighlight.unexpectedBracket.foreground': colors.black,
+      // 'editorBracketHighlight.foreground1': themes.primary,
+      // 'editorBracketHighlight.foreground2': themes.primary,
+      // 'editorBracketHighlight.foreground3': themes.primary,
+      // 'editorBracketHighlight.foreground4': themes.primary,
+      // 'editorBracketHighlight.foreground5': themes.primary,
+      // 'editorBracketHighlight.foreground6': themes.primary,
+      // 'editorBracketHighlight.unexpectedBracket.foreground': themes.secondary,
       // 'editorBracketPairGuide.activeBackground1':themes.primary,
       // 'editorBracketPairGuide.activeBackground2':themes.primary,
       // 'editorBracketPairGuide.activeBackground3':themes.primary,
@@ -298,7 +296,7 @@ export default function getTheme() {
       // 'editor.foldBackground':themes.primary,
       'editorOverviewRuler.background': themes.background,
       'editorOverviewRuler.border': themes.border,
-      'editorOverviewRuler.findMatchForeground': themes.primary,
+      'editorOverviewRuler.findMatchForeground': themes.foreground,
       // 'editorOverviewRuler.rangeHighlightForeground':themes.primary,
       // 'editorOverviewRuler.selectionHighlightForeground':themes.primary,
       // 'editorOverviewRuler.wordHighlightForeground':themes.primary,
@@ -341,12 +339,12 @@ export default function getTheme() {
       // 'editorCommentsWidget.rangeActiveBackground':themes.primary,
 
       // Diff editor colors
-      // 'diffEditor.insertedTextBackground':colors.green,
-      'diffEditor.insertedTextBorder': colors.green,
+      // 'diffEditor.insertedTextBackground':themes.primaryBackground,
+      'diffEditor.insertedTextBorder': themes.border,
       // 'diffEditor.removedTextBackground':themes.primaryBackground,
-      'diffEditor.removedTextBorder': themes.error,
-      'diffEditor.border': themes.primary,
-      'diffEditor.diagonalFill': colors.blue,
+      'diffEditor.removedTextBorder': themes.border,
+      'diffEditor.border': themes.border,
+      // 'diffEditor.diagonalFill': themes.secondary,
       // 'diffEditor.insertedLineBackground':themes.primary,
       // 'diffEditor.removedLineBackground':themes.primary,
       // 'diffEditorGutter.insertedLineBackground':themes.primary,
@@ -354,7 +352,7 @@ export default function getTheme() {
       // 'diffEditorOverview.insertedForeground':themes.primary,
       // 'diffEditorOverview.removedForeground':themes.primary,
       'diffEditor.unchangedRegionBackground': themes.background,
-      'diffEditor.unchangedRegionForeground': themes.primary,
+      'diffEditor.unchangedRegionForeground': themes.secondary,
       'diffEditor.unchangedCodeBackground': themes.background,
       // 'diffEditor.move.border':themes.secondary,
       // 'diffEditor.moveActive.border':themes.primary,
@@ -459,7 +457,7 @@ export default function getTheme() {
       'panel.border': themes.border,
       'panel.dropBorder': themes.primaryBackground,
       'panelTitle.activeBorder': themes.border,
-      'panelTitle.activeForeground': themes.primary,
+      'panelTitle.activeForeground': themes.foreground,
       'panelTitle.inactiveForeground': themes.foreground,
       'panelInput.border': themes.border,
       // 'panelSection.border': themes.error,
@@ -470,12 +468,12 @@ export default function getTheme() {
 
       // Status Bar colors
       'statusBar.background': themes.background,
-      'statusBar.foreground': themes.primary,
+      'statusBar.foreground': themes.foreground,
       'statusBar.border': themes.border,
       'statusBar.debuggingBackground': themes.background,
       'statusBar.debuggingForeground': themes.primary,
       'statusBar.debuggingBorder': themes.border,
-      'statusBar.noFolderForeground': themes.primary,
+      'statusBar.noFolderForeground': themes.foreground,
       'statusBar.noFolderBackground': themes.background,
       'statusBar.noFolderBorder': themes.border,
       // 'statusBarItem.activeBackground': themes.primary,
@@ -537,7 +535,7 @@ export default function getTheme() {
 
       // Notification colors
       'notificationCenter.border': themes.border,
-      'notificationCenterHeader.foreground': themes.primary,
+      'notificationCenterHeader.foreground': themes.foreground,
       'notificationCenterHeader.background': themes.background,
       'notificationToast.border': themes.border,
       'notifications.foreground': themes.foreground,
@@ -554,11 +552,11 @@ export default function getTheme() {
       // 'banner.iconForeground': themes.primary,
 
       // Extensions colors
-      'extensionButton.prominentForeground': themes.primary,
+      'extensionButton.prominentForeground': themes.foreground,
       // 'extensionButton.prominentBackground': themes.background,
       'extensionButton.prominentHoverBackground': themes.background,
       // 'extensionButton.background': themes.primary,
-      'extensionButton.foreground': themes.primary,
+      'extensionButton.foreground': themes.foreground,
       'extensionButton.hoverBackground': themes.background,
       // 'extensionButton.separator': themes.primary,
       // 'extensionBadge.remoteBackground': themes.primary,
@@ -580,7 +578,7 @@ export default function getTheme() {
 
       // Keybinding label colors
       'keybindingLabel.background': themes.background,
-      'keybindingLabel.foreground': themes.primary,
+      'keybindingLabel.foreground': themes.foreground,
       'keybindingLabel.border': themes.border,
       'keybindingLabel.bottomBorder': themes.border,
 
@@ -617,7 +615,7 @@ export default function getTheme() {
       'terminal.findMatchHighlightBorder': themes.border,
       // 'terminal.hoverHighlightBackground': themes.primary,
       'terminalCursor.background': themes.background,
-      'terminalCursor.foreground': themes.primary,
+      'terminalCursor.foreground': themes.foreground,
       // 'terminal.dropBackground': themes.primary,
       // 'terminal.tab.activeBorder': themes.primary,
       // 'terminalCommandDecoration.defaultBackground': themes.primary,
@@ -631,14 +629,14 @@ export default function getTheme() {
       'debugToolBar.border': themes.border,
       'editor.stackFrameHighlightBackground': themes.primaryBackground,
       'editor.focusedStackFrameHighlightBackground': themes.primaryBackground,
-      'editor.inlineValuesForeground': colors.white,
+      'editor.inlineValuesForeground': themes.foreground,
       'editor.inlineValuesBackground': themes.primaryBackground,
       // 'debugView.exceptionLabelForeground': themes.primary,
       // 'debugView.exceptionLabelBackground': themes.primary,
-      'debugView.stateLabelForeground': themes.primary,
-      'debugView.stateLabelBackground': themes.background,
-      'debugView.valueChangedHighlight': themes.primary,
-      'debugTokenExpression.name': themes.primary,
+      'debugView.stateLabelForeground': themes.foreground,
+      'debugView.stateLabelBackground': themes.primaryBackground,
+      'debugView.valueChangedHighlight': themes.primaryBackground,
+      'debugTokenExpression.name': themes.secondary,
       // 'debugTokenExpression.value': themes.primary,
       // 'debugTokenExpression.string': themes.primary,
       // 'debugTokenExpression.boolean': themes.primary,
@@ -708,8 +706,8 @@ export default function getTheme() {
       // Breadcrumbs colors
       'breadcrumb.foreground': themes.foreground,
       // 'breadcrumb.background': themes.primary,
-      'breadcrumb.focusForeground': themes.primary,
-      'breadcrumb.activeSelectionForeground': themes.primary,
+      'breadcrumb.focusForeground': themes.foreground,
+      'breadcrumb.activeSelectionForeground': themes.foreground,
       // 'breadcrumbPicker.background': themes.primary,
 
       // Snippets colors
@@ -823,7 +821,84 @@ export default function getTheme() {
 
       // Simple Find Widget
       // 'simpleFindWidget.sashBorder':themes.primary,
-    }
+    },
+    tokenColors: [
+      {
+        scope: ['comment', 'comment.block.documentation'],
+        settings: themes.comment
+      },
+      {
+        scope: ['string'],
+        settings: themes.string
+      },
+      {
+        scope: ['regex'],
+        settings: themes.regex
+      },
+      {
+        scope: ['number', 'constant.numeric.decimal'],
+        settings: themes.number
+      },
+      {
+        scope: ['constant.language.undefined'],
+        settings: themes.undefined
+      },
+      {
+        scope: ['boolean', 'constant.language.boolean'],
+        settings: themes.boolean
+      },
+      {
+        scope: [
+          'keyword',
+          'storage.type.js',
+          'storage.modifier.js',
+          'storage.type.ts',
+          'storage.type.interface.ts',
+          'storage.type.function.ts',
+          'support.type.primitive.ts',
+          'support.type.builtin.ts',
+          'storage.modifier.async.ts'
+        ],
+        settings: themes.keyword
+      },
+      {
+        scope: ['function', 'entity.name.function'],
+        settings: themes.function
+      },
+      {
+        scope: ['entity.other.attribute-name.html'],
+        settings: themes.bold
+      },
+      {
+        scope: ['support.type.property-name.json'],
+        settings: themes.default
+      },
+      {
+        scope: [
+          'punctuation.definition.list.begin.markdown',
+          'punctuation.definition.quote.begin.markdown',
+          'punctuation.definition.heading.markdown',
+          'punctuation.definition.bold.markdown',
+          'punctuation.definition.italic.markdown',
+          'punctuation.definition.raw.markdown',
+          'punctuation.definition.markdown',
+          'fenced_code.block.language.markdown',
+          'meta.separator.markdown',
+          'punctuation.definition.link.title.begin.markdown',
+          'punctuation.definition.link.title.end.markdown',
+          'punctuation.definition.metadata.markdown',
+          'punctuation.definition.link.markdown'
+        ],
+        settings: themes.gray
+      },
+      {
+        scope: [
+          'string.other.link.title.markdown',
+          'string.other.link.description.title.markdown'
+        ],
+        settings: themes.default
+      }
+    ]
   }
   return theme
 }
