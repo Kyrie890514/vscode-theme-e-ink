@@ -898,7 +898,8 @@ export default function getTheme() {
       {
         scope: [
           'string.other.link.title.markdown',
-          'string.other.link.description.title.markdown'
+          'string.other.link.description.title.markdown',
+          'string.other.link.description.markdown'
         ],
         settings: themes.default
       },
