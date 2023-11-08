@@ -844,7 +844,11 @@ export default function getTheme() {
         settings: themes.undefined
       },
       {
-        scope: ['boolean', 'constant.language.boolean'],
+        scope: [
+          'boolean',
+          'constant.language.boolean',
+          'constant.language.json'
+        ],
         settings: themes.boolean
       },
       {
