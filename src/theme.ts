@@ -925,6 +925,15 @@ export default function getTheme() {
           'storage.modifier.async.ts'
         ],
         settings: themes.keyword
+      },
+      // vue
+      {
+        scope: [
+          'keyword.control.loop.vue',
+          'punctuation.attribute-shorthand.bind.html.vue',
+          'punctuation.attribute-shorthand.event.html.vue'
+        ],
+        settings: themes.bold
       }
     ]
   }
