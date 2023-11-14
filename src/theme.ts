@@ -823,26 +823,32 @@ export default function getTheme() {
       // 'simpleFindWidget.sashBorder':themes.primary,
     },
     tokenColors: [
+      // comment
       {
         scope: ['comment', 'comment.block.documentation'],
         settings: themes.comment
       },
+      // string
       {
         scope: ['string'],
         settings: themes.string
       },
+      // regex
       {
         scope: ['regex'],
         settings: themes.regex
       },
+      // number
       {
         scope: ['number', 'constant.numeric.decimal'],
         settings: themes.number
       },
+      // undefined
       {
         scope: ['constant.language.undefined'],
         settings: themes.undefined
       },
+      // boolean
       {
         scope: [
           'boolean',
@@ -851,32 +857,27 @@ export default function getTheme() {
         ],
         settings: themes.boolean
       },
+      // keyword
       {
-        scope: [
-          'keyword',
-          'storage.type.js',
-          'storage.modifier.js',
-          'storage.type.ts',
-          'storage.type.interface.ts',
-          'storage.type.function.ts',
-          'support.type.primitive.ts',
-          'support.type.builtin.ts',
-          'storage.modifier.async.ts'
-        ],
+        scope: ['keyword'],
         settings: themes.keyword
       },
+      // function
       {
         scope: ['function', 'entity.name.function'],
         settings: themes.function
       },
+      // html
       {
         scope: ['entity.other.attribute-name.html'],
         settings: themes.bold
       },
+      // json
       {
         scope: ['support.type.property-name.json'],
         settings: themes.default
       },
+      // markdown
       {
         scope: [
           'punctuation.definition.list.begin.markdown',
@@ -903,9 +904,27 @@ export default function getTheme() {
         ],
         settings: themes.default
       },
+      // yaml
       {
         scope: ['entity.name.tag.yaml'],
         settings: themes.default
+      },
+      // js
+      {
+        scope: ['storage.type.js', 'storage.modifier.js'],
+        settings: themes.keyword
+      },
+      // ts
+      {
+        scope: [
+          'storage.type.ts',
+          'storage.type.interface.ts',
+          'storage.type.function.ts',
+          'support.type.primitive.ts',
+          'support.type.builtin.ts',
+          'storage.modifier.async.ts'
+        ],
+        settings: themes.keyword
       }
     ]
   }
