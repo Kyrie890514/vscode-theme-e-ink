@@ -1,5 +1,7 @@
 # E-Ink Theme for VSCode
 
+![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/Kyrie890514.vscode-theme-e-ink?logo=visual-studio-code&logoColor=ffffff&label=E-Ink%20Theme&labelColor=000000&color=dddddd)
+
 This is a VSCode theme designed specifically for E-Ink displays.
 
 ![screenshot](./screenshot.png)
